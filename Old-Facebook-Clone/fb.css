@@ -1,0 +1,169 @@
+.header{
+    width: 100%;
+    height: 83px;
+    background: #3b5998;
+}
+body{
+    margin: 0;
+    font-family: inherit;
+}
+.logo{
+    width: 50%;
+    padding-top: 32px;
+    float: left;
+}
+.facebook{
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: inherit;
+    margin-left: 90px;
+}
+.login{
+    width: 50%;
+    padding-top: 10px;
+    float: left;
+    color: #ffffff;
+    text-decoration: none;
+}
+.login-controls{
+    margin-left: 115px;
+}
+.forgot{
+    text-decoration: none;
+    color: #0e61e7;
+}
+.submit{
+    background: #537ac4;
+    color: #ffffff;
+    height: 24px;
+    border-color: #3f6dc4;
+    cursor: pointer;
+}
+.submit:hover{
+    background: #0b51d4;
+}
+.left-sec{
+    width: 50%;
+    float: left;
+    padding-left: 120px;
+    padding-top: 40px;
+}
+.right-sec{
+    width: 42%;
+    float: left;
+}
+.main-body{
+    background: linear-gradient(white,#D3D8E8);
+    width: 100%;
+    height: 620px;
+}
+.image{
+    width: 600px;
+}
+.body-content{
+    font-weight: bolder;
+    font-size: 21px;
+}
+.para{
+    color: black;
+    font-size: 20px;
+    font-weight: 540;
+}
+.name{
+    width: 185px;
+    height: 26px;
+    border-radius: 4px;
+}
+.surname{
+    width: 185px;
+    height: 26px;
+    border-radius: 4px;
+}
+.mob-eml{
+    width: 382px;
+    height: 26px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+.bi-ge{
+    font-weight: 600;
+    color: rgb(107, 107, 107);
+    margin-top: 4px;
+    border-radius: 4px;
+}
+.day{
+    height: 26px;
+    width: 38px;
+    margin-top: 0%;
+    border-radius: 4px;
+}
+.month{
+    height: 31px;
+    width: 60px;
+    border-radius: 4px;
+}
+.year{
+    height: 26px;
+    width: 45px;
+    border-radius: 4px;
+}
+.question{
+    height: 10px;
+    width: 10px;
+}
+.gender{
+    font-weight: 600;
+    padding-top: 0%;
+}
+.terms{
+    font-weight: 600;
+    color: rgb(49, 46, 46);
+    margin-top: 15px;
+    font-size: 13px;
+}
+.signup{
+    background: rgb(115, 245, 115);
+    height: 50px;
+    width: 210px;
+    border-radius: 10px;
+    background: rgb(12,127,3);
+    background: linear-gradient(180deg, rgba(12,127,3,1) 5%, rgba(8,168,8,1) 6%, rgba(0,106,18,1) 85%, rgba(18,168,6,1) 100%);
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+    border-color: rgb(12,127,3);
+}
+.signup:hover{
+    background: rgb(8, 100, 2);
+}
+.login-page{
+    border-radius: 2px;
+}
+.terms-link{
+    text-decoration: none;
+    color: rgb(50, 50, 238);
+    font-weight: 600;
+}
+.page-cre{
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+}
+.band{
+    font-weight: bold;
+    color: rgb(70, 68, 68);
+}
+.footer{
+    width: 100%;
+    height: 188px;
+    background: #ffffff;
+}
+.footer-eng{
+    color: gray;
+}
+.language{
+    text-decoration: none;
+}
